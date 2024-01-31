@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Ferguson</string>
+    <string name="txtinfo">
+Please enter email address.Yoy will receive
+a link to create a new via email.</string>
+    <string name="Error_Forget">Not a valid email address. Should be your@email.com</string>
+
+</resources>
