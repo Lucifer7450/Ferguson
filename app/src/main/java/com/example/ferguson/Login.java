@@ -9,29 +9,22 @@ import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
+import android.widget.TextView;
 import android.widget.Toast;
 
 public class Login extends AppCompatActivity {
 
-        Button btnForget,Sign_Up,Login;
-    @SuppressLint("MissingInflatedId")
+        Button loginButton;
+        TextView btnForget,ForgetPage,signupPage;
+    @SuppressLint({"MissingInflatedId", "WrongViewCast"})
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        btnForget=findViewById(R.id.btnForget);
-        Sign_Up=findViewById(R.id.Sign_Up);
-        Login=findViewById(R.id.Login);
-
-        //dialog box
-      /*  AlertDialog alertDialog= new AlertDialog.Builder(this).create();
-
-
-        alertDialog.setTitle("Welcome to our application");
-        alertDialog.setIcon(R.drawable.ag);
-        alertDialog.setMessage("You want to join this app");
-        alertDialog.show(); */
+        btnForget=findViewById(R.id.ForgetPage);
+        signupPage=findViewById(R.id.signupPage);
+        loginButton=findViewById(R.id.loginButton);
 
 
       btnForget.setOnClickListener(new View.OnClickListener() {
@@ -43,7 +36,7 @@ public class Login extends AppCompatActivity {
 
           }
       });
-        Sign_Up.setOnClickListener(new View.OnClickListener() {
+        signupPage.setOnClickListener(new View.OnClickListener() {
           @Override
           public void onClick(View v) {
               Intent Sign_Up;
@@ -52,41 +45,40 @@ public class Login extends AppCompatActivity {
           }
       });
 
-        Login.setOnClickListener(new View.OnClickListener() {
+        loginButton.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent Login;
-                Login=new Intent(Login.this,Home.class);
-                startActivity(Login);
+                Intent loginButton;
+                loginButton=new Intent(Login.this,Home.class);
+                startActivity(loginButton);
             }
         });
 
-        //dialog.builder
-        AlertDialog.Builder delDialog =new AlertDialog.Builder(this);
+       //dialog.builder referance
+//        AlertDialog.Builder delDialog =new AlertDialog.Builder(this);
 
     }
-
-    @Override
-    public void onBackPressed() {
-        super.onBackPressed();
-        AlertDialog.Builder exitDilog = new AlertDialog.Builder(this);
-
-        exitDilog.setTitle("Exit?");
-        exitDilog.setIcon(R.drawable.ag);
-        exitDilog.setMessage("Are your sure want to exit?");
-
-        exitDilog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Toast.makeText(Login.this, "ok", Toast.LENGTH_SHORT).show();
-            }
-        });
-        exitDilog.setNegativeButton("No", new DialogInterface.OnClickListener() {
-            @Override
-            public void onClick(DialogInterface dialog, int which) {
-                Login.super.onBackPressed();
-            }
-        });
-        exitDilog.show();
-    }
+//   @Override
+//    public void onBackPressed() {
+//        super.onBackPressed();
+//        AlertDialog.Builder exitDilog = new AlertDialog.Builder(this);
+//
+//        exitDilog.setTitle("Exit?");
+//        exitDilog.setIcon(R.drawable.ag);
+//        exitDilog.setMessage("Are your sure want to exit?");
+//
+//        exitDilog.setPositiveButton("Yes", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                Toast.makeText(Login.this, "ok", Toast.LENGTH_SHORT).show();
+//            }
+//        });
+//        exitDilog.setNegativeButton("No", new DialogInterface.OnClickListener() {
+//            @Override
+//            public void onClick(DialogInterface dialog, int which) {
+//                Login.super.onBackPressed();
+//            }
+//        });
+//        exitDilog.show();
+//    }
 }

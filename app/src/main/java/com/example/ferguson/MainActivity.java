@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity {
             @Override
             public void run() {
                 startActivity(btn);
+                finish();
             }
         },1000);
     }
