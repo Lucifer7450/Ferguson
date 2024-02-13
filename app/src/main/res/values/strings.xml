@@ -4,5 +4,7 @@
 Please enter email address.Yoy will receive
 a link to create a new via email.</string>
     <string name="Error_Forget">Not a valid email address. Should be your@email.com</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
 
 </resources>
