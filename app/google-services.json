@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "345809928892",
+    "project_id": "ferguson-cd008",
+    "storage_bucket": "ferguson-cd008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:345809928892:android:315060f361de3b0d7086b9",
+        "android_client_info": {
+          "package_name": "com.hardware.ferguson"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAGFv4y7K2vxJJUYmfx1fE359Kzzy_Gr5E"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
