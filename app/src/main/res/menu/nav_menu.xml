@@ -2,20 +2,25 @@
 <menu xmlns:android="http://schemas.android.com/apk/res/android">
 
     <item android:id="@+id/Home_nav"
-    android:title="Home"
-    android:icon="@drawable/homebtn_bold_icon"/>
+        android:title="Home"
+        android:icon="@drawable/home"
+        android:iconTint="@color/them"
+        />
 
     <item android:id="@+id/Save_nav"
         android:title="Save"
-        android:icon="@drawable/save_bold_icon"/>
+        android:icon="@drawable/bookmark"
+        android:iconTint="@color/them"/>
 
     <item android:id="@+id/Cart_nav"
         android:title="Cart"
-        android:icon="@drawable/cartbtn_boald_icon"/>
+        android:icon="@drawable/buy"
+        android:iconTint="@color/them"/>
 
     <item android:id="@+id/Profile_nav"
         android:title="Profile"
-        android:icon="@drawable/profile_icon"/>
+        android:icon="@drawable/profile"
+        android:iconTint="@color/them"/>
 
 
 </menu>

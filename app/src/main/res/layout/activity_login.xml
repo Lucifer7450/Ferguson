@@ -48,14 +48,14 @@
                     android:textStyle="bold" />
 
                 <EditText
-                    android:id="@+id/username"
+                    android:id="@+id/Email"
                     android:layout_width="match_parent"
                     android:layout_height="50dp"
                     android:layout_marginTop="40dp"
                     android:background="@drawable/custome_edittext"
-                    android:drawableLeft="@drawable/person"
+                    android:drawableLeft="@drawable/email_icon"
                     android:drawablePadding="8dp"
-                    android:hint="Username"
+                    android:hint="Email"
                     android:inputType="text"
                     android:padding="8dp"
                     android:textColor="@color/black"
@@ -84,7 +84,11 @@
                     android:text="Login"
                     android:textSize="18sp"
                     app:cornerRadius="20dp" />
-
+                <ProgressBar
+                    android:id="@+id/progressBar"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:visibility="gone"/>
                 <TextView
                     android:id="@+id/ForgetPage"
                     android:layout_width="wrap_content"

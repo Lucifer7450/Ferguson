@@ -1,4 +1,4 @@
-package com.example.ferguson;
+package com.hardware.ferguson;
 
 import android.os.Bundle;
 
@@ -8,11 +8,10 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
+public class Save_fragment extends Fragment {
 
-public class Home_fragment extends Fragment {
 
-
-    public Home_fragment() {
+    public Save_fragment() {
         // Required empty public constructor
     }
 
@@ -20,6 +19,6 @@ public class Home_fragment extends Fragment {
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_home_fragment, container, false);
+        return inflater.inflate(R.layout.fragment_save_fragment, container, false);
     }
 }

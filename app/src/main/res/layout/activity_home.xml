@@ -8,21 +8,50 @@
     tools:context=".MainActivity"
     android:orientation="horizontal">
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        />
 
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/black">
+
+        <ImageView
+            android:layout_width="160dp"
+            android:layout_height="50dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/logo_rectangle" />
+
+        <ImageView
+            android:layout_width="27dp"
+            android:layout_height="27dp"
+            android:layout_gravity="center"
+            android:layout_marginLeft="170dp"
+            android:src="@drawable/notifaction_icon" />
+    </LinearLayout>
 
     <FrameLayout
         android:id="@+id/container"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"/>
+        android:layout_height="match_parent"
+        android:layout_marginTop="70dp"
+        android:layout_marginBottom="?attr/actionBarSize" />   <!--    defind heigh for bottom nav-->
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bnView"
+        app:itemIconTint="@color/them"
+        app:itemIconSize="35dp"
         android:layout_width="match_parent"
+        app:itemTextColor="@color/them"
         android:layout_height="wrap_content"
         android:layout_alignParentBottom="true"
         app:menu="@menu/nav_menu"
-        app:cornerRadius="20dp"
-        android:background="#97978F" />
+        app:cornerRadius="10dp"
+
+        android:background="#050500" />
 
 </RelativeLayout>
 

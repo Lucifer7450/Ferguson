@@ -1,4 +1,4 @@
-package com.example.ferguson;
+package com.hardware.ferguson;
 
 import android.os.Bundle;
 
